@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap');
+@import '../scss/blocks/globals/globals';
+@import '../scss/blocks/header/header';
+@import '../scss/blocks/header/__container/header__container';
+@import '../scss/blocks/logo/logo';
+@import '../scss/blocks/logo/__text/logo__text';
+@import '../scss/blocks/navigation/__list/navigation__list';
+@import '../scss/blocks/search-form/__button/search-form__button';
+@import '../scss/blocks/search-form/__input/search-form__input';
+
+
+
+
+.navigation__item {}
+
+
+.content {
+  width: 1100px;
+  margin: 0 auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 25px;
+  min-height: 730px;
+}
+.card {
+  position: relative;
+  color: #fff;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card_height_2x {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.card__title {
+  position: absolute;
+}
+.card__author {
+  position: absolute;
+}
+.card__label {
+  position: absolute;
+}
