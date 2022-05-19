@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap');
 @import '../scss/blocks/globals/globals';
+@import '../scss/blocks/section-title/section-title';
+@import '../scss/blocks/section-title/_mb/section-title_mb_23';
 @import '../scss/blocks/header/header';
 @import '../scss/blocks/header/__container/header__container';
 @import '../scss/blocks/logo/logo';
@@ -10,6 +12,9 @@
 @import '../scss/blocks/search-form/__input/search-form__input';
 
 @import '../scss/blocks/content/content';
+@import '../scss/blocks/two-columns/two-columns';
+@import '../scss/blocks/two-columns/__main/two-columns__main';
+@import '../scss/blocks/two-columns/__sidebar/two-columns__sidebar';
 @import '../scss/blocks/label/label';
 
 @import '../scss/blocks/category/category';
@@ -20,84 +25,35 @@
 @import '../scss/blocks/category/__author/category__author';
 @import '../scss/blocks/category/__text-container/category__text-container';
 
+@import '../scss/blocks/posts/posts';
+@import '../scss/blocks/posts/__item/posts__item';
+@import '../scss/blocks/posts/__description/posts__description';
+@import '../scss/blocks/posts/__img/posts__img';
+@import '../scss/blocks/posts/__title/posts__title';
+@import '../scss/blocks/posts/__author/posts__author';
+@import '../scss/blocks/posts/__text/posts__text';
+
 @import '../scss/blocks/about-us/about-us';
-@import '../scss/blocks/about-us/__img/about-us__img';
+// подумать какие стили задать блоку post...
+@import '../scss/blocks/post/__img/post__img';
+@import '../scss/blocks/post/__title/post__title';
+@import '../scss/blocks/post/__subtitle/post__subtitle';
+@import '../scss/blocks/post/__text/post__text';
+@import '../scss/blocks/post/__link/post__link';
 
 
 
 
 
-.posts {
-  // padding-top: 76px;
-}
-.post__item {
-  width: 770px;
-}
-.post__description {
-  position: relative;
-  width: 730px;
-  padding: 72px 30px 30px 30px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 5px;
-  transform: translateY(-50%);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
-}
-.post__img {
-  display: block;
-  width: 770px;
-  height: 440px;
-  border-radius: 5px;
-  object-fit: cover;
-}
-.post__title {
-  margin: 0;
-  font: 700 18px/25px var(--f-f);
-  color: #171717;
-}
-.post__author {
-  margin: 0;
-  font: italic 400 14px/18px var(--f-f);
-  color: #666;
-}
-.post__text {
-  max-width: 614px;
-  margin: 0;
-  font: 400 14px/24px var(--f-f);
-  color: #666;
-}
-.two-columns__sidebar {
-  width: 270px;
-  min-height: 2000px;
-  border: 3px solid tomato;
-}
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-}
-.two-columns__main {}
 
-.about-us__title {
-  margin: 0 0 8px 0;
-  font: 700 18px/23px var(--f-f);
-  color: #171717;
-}
-.about-us__subtitle {
-  margin: 0 0 14px 0;
-  font: italic 400 14px/18px var(--f-f);
-  color: #999;
-}
-.about-us__text {
-  margin: 0 0 21px 0;
-  font: 400 15px/25px var(--f-f);
-  color: #666;
-}
-.about-us__link {
-  display: block;
-  padding: 15px;
-  background-color: #232323;
-  border-radius: 5px;
-  box-sizing: border-box;
-  text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+

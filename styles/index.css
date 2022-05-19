@@ -26,6 +26,15 @@
   transition: .6s color;
 }
 
+.section-title {
+  font: 700 18px/23px var(--f-f);
+  color: #171717;
+}
+
+.section-title_mb_23 {
+  margin: 0 0 23px 0;
+}
+
 .header {
   background-color: #000;
   color: #fff;
@@ -72,6 +81,17 @@
 .content {
   width: 1170px;
   margin: 0 auto;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__sidebar {
+  width: 270px;
+  min-height: 2000px;
+  border: 3px solid tomato;
 }
 
 .label {
@@ -129,26 +149,11 @@
   bottom: 23px;
 }
 
-.about-us {
-  width: 270px;
-  min-height: 420px;
-}
-
-.about-us__img {
-  display: block;
-  width: 270px;
-  height: 200px;
-  margin-bottom: 20px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 5px;
-}
-
-.post__item {
+.posts__item {
   width: 770px;
 }
 
-.post__description {
+.posts__description {
   position: relative;
   width: 730px;
   padding: 72px 30px 30px 30px;
@@ -160,7 +165,7 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.post__img {
+.posts__img {
   display: block;
   width: 770px;
   height: 440px;
@@ -168,55 +173,60 @@
   object-fit: cover;
 }
 
-.post__title {
+.posts__title {
   margin: 0;
   font: 700 18px/25px var(--f-f);
   color: #171717;
 }
 
-.post__author {
+.posts__author {
   margin: 0;
   font: italic 400 14px/18px var(--f-f);
   color: #666;
 }
 
-.post__text {
+.posts__text {
   max-width: 614px;
   margin: 0;
   font: 400 14px/24px var(--f-f);
   color: #666;
 }
 
-.two-columns__sidebar {
+.about-us {
   width: 270px;
-  min-height: 2000px;
-  border: 3px solid tomato;
+  min-height: 420px;
+  margin-bottom: 60px;
 }
 
-.two-columns {
-  display: flex;
-  justify-content: space-between;
+.post__img {
+  display: block;
+  width: 270px;
+  height: 200px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
 }
 
-.about-us__title {
+.post__title {
   margin: 0 0 8px 0;
   font: 700 18px/23px var(--f-f);
   color: #171717;
 }
 
-.about-us__subtitle {
+.post__subtitle {
   margin: 0 0 14px 0;
   font: italic 400 14px/18px var(--f-f);
   color: #999;
 }
 
-.about-us__text {
+.post__text {
   margin: 0 0 21px 0;
   font: 400 15px/25px var(--f-f);
   color: #666;
 }
 
-.about-us__link {
+.post__link {
   display: block;
   padding: 15px;
   background-color: #232323;
