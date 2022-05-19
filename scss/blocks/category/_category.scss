@@ -1,0 +1,10 @@
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 25px;
+  min-height: 730px;
+  padding-top: 30px;
+  margin-bottom: 76px;
+}

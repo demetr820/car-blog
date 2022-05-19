@@ -39,72 +39,72 @@
     </div>
   </header>
   <main class="content">
-    <div class="cards">
-      <div class="card card_height_2x">
-        <span class="card__label">Vehicle</span>
-        <img class="card__image" src="images/image-1.jpg" alt="car-1">
-        <div class="card__text-container">
-          <span class="card__author">
+    <section class="category" aria-label="category">
+      <div class="category__item category__item_height_2x">
+        <span class="label">Vehicle</span>
+        <img class="category__image" src="images/image-1.jpg" alt="car-1">
+        <div class="category__text-container">
+          <span class="category__author">
             Rickie Baroch - June 6, 2019
           </span>
-          <h2 class="card__title">
+          <h2 class="category__title">
             One of Saturn’s largest rings may be newer than anyone
           </h2>
         </div>
       </div>
-      <div class="card">
-        <img class="card__image" src="images/image-2.jpg" alt="car-2">
-        <span class="card__label">Vehicle</span>
-        <div class="card__text-container">
-          <span class="card__author">
+      <div class="category__item">
+        <img class="category__image" src="images/image-2.jpg" alt="car-2">
+        <span class="category__label">Vehicle</span>
+        <div class="category__text-container">
+          <span class="category__author">
             Rickie Baroch - June 6, 2019
           </span>
-          <h2 class="card__title">
+          <h2 class="category__title">
             One of Saturn’s largest rings may be newer than anyone
           </h2>
         </div>
       </div>
-      <div class="card">
-        <img class="card__image" src="images/image-3.jpg" alt="car-3">
-        <span class="card__label">Vehicle</span>
-        <div class="card__text-container">
-          <span class="card__author">
+      <div class="category__item">
+        <img class="category__image" src="images/image-3.jpg" alt="car-3">
+        <span class="category__label">Vehicle</span>
+        <div class="category__text-container">
+          <span class="category__author">
             Rickie Baroch - June 6, 2019
           </span>
-          <h2 class="card__title">
+          <h2 class="category__title">
             One of Saturn’s largest rings may be newer than anyone
           </h2>
         </div>
       </div>
-      <div class="card">
-        <img class="card__image" src="images/image-4.jpg" alt="car-4">
-        <span class="card__label">Vehicle</span>
-        <div class="card__text-container">
-          <span class="card__author">
+      <div class="category__item">
+        <img class="category__image" src="images/image-4.jpg" alt="car-4">
+        <span class="category__label">Vehicle</span>
+        <div class="category__text-container">
+          <span class="category__author">
             Rickie Baroch - June 6, 2019
           </span>
-          <h2 class="card__title">
+          <h2 class="category__title">
             One of Saturn’s largest rings may be newer than anyone
           </h2>
         </div>
       </div>
-      <div class="card">
-        <img class="card__image" src="images/image-5.jpg" alt="car-5">
-        <span class="card__label">Vehicle</span>
-        <div class="card__text-container">
-          <span class="card__author">
+      <div class="category__item">
+        <img class="category__image" src="images/image-5.jpg" alt="car-5">
+        <span class="category__label">Vehicle</span>
+        <div class="category__text-container">
+          <span class="category__author">
             Rickie Baroch - June 6, 2019
           </span>
-          <h2 class="card__title">
+          <h2 class="category__title">
             One of Saturn’s largest rings may be newer than anyone
           </h2>
         </div>
       </div>
-    </div>
-    <section class="two-columns">
-      <div class="column-left">
+    </section>
+    <section class="two-columns" aria-label="two columns">
+      <div class="two-columns__main">
         <ul class="list posts">
-          <li class="post">
+          <li class="post__item">
             <img class="post__img" src="images/posts/post-img1.jpg" alt="car-1">
             <div class="post__description">
               <span class="card__label">Vehicle</span>
@@ -118,8 +118,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li class="post">
-          <li class="post">
+          </li>
+          <li class="post__item">
             <img class="post__img" src="images/posts/post-img2.jpg" alt="car-2">
             <div class="post__description">
               <span class="card__label">Vehicle</span>
@@ -134,7 +134,7 @@
               </p>
             </div>
           </li>
-          <li class="post">
+          <li class="post__item">
             <img class="post__img" src="images/posts/post-img3.jpg" alt="car-3">
             <div class="post__description">
               <span class="card__label">Vehicle</span>
@@ -149,7 +149,7 @@
               </p>
             </div>
           </li>
-          <li class="post">
+          <li class="post__item">
             <img class="post__img" src="images/posts/post-img4.jpg" alt="car-4">
             <div class="post__description">
               <span class="card__label">Vehicle</span>
@@ -164,7 +164,7 @@
               </p>
             </div>
           </li>
-          <li class="post">
+          <li class="post__item">
             <img class="post__img" src="images/posts/post-img5.jpg" alt="car-5">
             <div class="post__description">
               <span class="card__label">Vehicle</span>
@@ -181,8 +181,19 @@
           </li>
         </ul>
       </div>
-      <aside class="column-right">
-
+      <aside class="two-columns__sidebar">
+        <section class="about-us">
+          <img src="images/about.jpg" alt="about-us" class="about-us__img">
+          <h2 class="about-us__title">Leon Hunt</h2>
+          <p class="about-us__subtitle">
+            Food & cooking bloger
+          </p>
+          <p class="about-us__text">
+            Hi, I'm Leon. Cooking is the way I express my
+            creative side to the world. Welcome to my Kitchen Corner on…
+          </p>
+          <a href="#" class="link about-us__link">Continue Reading</a>
+        </section>
       </aside>
     </section>
     <nav class="pagination">
