@@ -30,10 +30,8 @@
       </nav>
       <form action="/" class="search-form">
         <input type="search" class="search-form__input">
-        <button class="search-form__button">
-          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8125 11.2762L15.7567 15.4843C16.0904 15.8403 16.0794 16.4079 15.7326 16.7502C15.5694 16.9114 15.3544 17 15.1278 17C14.8883 17 14.6649 16.9024 14.4988 16.7255L10.5246 12.4854C9.39609 13.299 8.07619 13.7275 6.69113 13.7275C3.0017 13.7275 0 10.6484 0 6.86374C0 3.07913 3.0017 0 6.69113 0C10.3806 0 13.3823 3.07913 13.3823 6.86374C13.3823 8.48359 12.8266 10.0396 11.8125 11.2762ZM11.6367 6.86374C11.6367 4.06632 9.4182 1.79054 6.69113 1.79054C3.96406 1.79054 1.74551 4.06632 1.74551 6.86374C1.74551 9.66117 3.96406 11.9369 6.69113 11.9369C9.4182 11.9369 11.6367 9.66117 11.6367 6.86374Z" fill="#929EAF"/>
-          </svg>
+        <button class="search-form__button" type="submit">
+          <svg role="img"><use xlink:href="images/sprite.svg#search"/></svg>
         </button>
       </form>
     </div>
@@ -103,9 +101,9 @@
     </section>
     <section class="two-columns" aria-label="two columns">
       <div class="two-columns__main">
-        <ul class="list posts">
+        <section class="list posts" aria-label="posts">
           <!-- надо придумать как назвать БЭМ-блоки в этой секции и заодно поправить позиционирование текста карточки -->
-          <li class="posts__item">
+          <article class="posts__item">
             <img class="posts__img" src="images/posts/post-img1.jpg" alt="car-1">
             <div class="posts__description">
               <span class="label">Vehicle</span>
@@ -119,8 +117,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li>
-          <li class="posts__item">
+          </article>
+          <article class="posts__item">
             <img class="posts__img" src="images/posts/post-img2.jpg" alt="car-2">
             <div class="posts__description">
               <span class="label">Vehicle</span>
@@ -134,8 +132,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li>
-          <li class="posts__item">
+          </article>
+          <article class="posts__item">
             <img class="posts__img" src="images/posts/post-img3.jpg" alt="car-3">
             <div class="posts__description">
               <span class="label">Vehicle</span>
@@ -149,8 +147,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li>
-          <li class="posts__item">
+          </article>
+          <article class="posts__item">
             <img class="posts__img" src="images/posts/post-img4.jpg" alt="car-4">
             <div class="posts__description">
               <span class="label">Vehicle</span>
@@ -164,8 +162,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li>
-          <li class="posts__item">
+          </article>
+          <article class="posts__item">
             <img class="posts__img" src="images/posts/post-img5.jpg" alt="car-5">
             <div class="posts__description">
               <span class="label">Vehicle</span>
@@ -179,57 +177,63 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
               </p>
             </div>
-          </li>
-        </ul>
+          </article>
+        </section>
       </div>
       <aside class="two-columns__sidebar">
         <section class="about-us">
           <article class="post">
-            <img src="images/about.jpg" alt="about-us" class="post__img">
-            <h2 class="post__title">Leon Hunt</h2>
-            <p class="post__subtitle">
+            <img src="images/about.jpg" alt="about-us" class="about-us__img">
+            <h2 class="about-us__title">Leon Hunt</h2>
+            <p class="about-us__subtitle">
               Food & cooking bloger
             </p>
-            <p class="post__text">
+            <p class="about-us__text">
               Hi, I'm Leon. Cooking is the way I express my
               creative side to the world. Welcome to my Kitchen Corner on…
             </p>
-            <a href="#" class="link post__link">Continue Reading</a>
+            <a href="#" class="link btn">Continue Reading</a>
           </article>
         </section>
-        <section class="popular-posts">
-          <h2 class="section-title section-title_mb_23">Popular posts</h2>
-          <article class="post">
-            <img src="images/popular/pop-1.jpg" alt="about-us" class="post__img">
-            <h2 class="post__title">
-              One of Saturn’s largest rings may be newer than anyone
-            </h2>
-            <p class="post__subtitle">
-              Food & cooking bloger
-            </p>
-          </article>
-          <article class="post">
-            <img src="images/popular/pop-2.jpg" alt="about-us" class="post__img">
-            <h2 class="post__title">
-              One of Saturn’s largest rings may be newer than anyone
-            </h2>
-            <p class="post__subtitle">
-              Food & cooking bloger
-            </p>
-          </article>
-          <article class="post">
-            <img src="images/popular/pop-3.jpg" alt="about-us" class="post__img">
-            <h2 class="post__title">
-              One of Saturn’s largest rings may be newer than anyone
-            </h2>
-            <p class="post__subtitle">
-              Food & cooking bloger
-            </p>
-          </article>
+        <section class="popular-posts" aria-label="Popular posts">
+          <h2 class="section-title">Popular posts</h2>
+          <div class="popular-posts__container">
+            <article class="post">
+              <span class="label">Vehicle</span>
+              <img src="images/popular/pop-1.jpg" alt="" class="post__img">
+              <h2 class="post__title">
+                One of Saturn’s largest rings may be newer than anyone
+              </h2>
+              <p class="post__subtitle">
+                Food & cooking bloger
+              </p>
+            </article>
+            <article class="post">
+              <span class="label">Vehicle</span>
+              <img src="images/popular/pop-2.jpg" alt="" class="post__img">
+              <h2 class="post__title">
+                One of Saturn’s largest rings may be newer than anyone
+              </h2>
+              <p class="post__subtitle">
+                Food & cooking bloger
+              </p>
+            </article>
+            <article class="post">
+              <span class="label">Vehicle</span>
+              <img src="images/popular/pop-3.jpg" alt="" class="post__img">
+              <h2 class="post__title">
+                One of Saturn’s largest rings may be newer than anyone
+              </h2>
+              <p class="post__subtitle">
+                Food & cooking bloger
+              </p>
+            </article>
+
+          </div>
         </section>
         <section class="instagram-widget">
           <h2 class="section-title">Instagram</h2>
-          <figure>
+          <figure class="instagram-widget__images">
             <img src="images/inst-foto/inst-1.jpg" alt="inst">
             <img src="images/inst-foto/inst-2.jpg" alt="inst">
             <img src="images/inst-foto/inst-3.jpg" alt="inst">
@@ -237,41 +241,122 @@
             <img src="images/inst-foto/inst-5.jpg" alt="inst">
             <img src="images/inst-foto/inst-6.jpg" alt="inst">
           </figure>
-          <a href="#">View instagram</a>
+          <a class="link btn" href="#">View instagram</a>
         </section>
         <section class="tags">
-          <a class="link" href="#">Business</a>
-          <a class="link" href="#">Freelance</a>
-          <a class="link" href="#">Money</a>
-          <a class="link" href="#">Experience</a>
-          <a class="link" href="#">Lifestyle</a>
-          <a class="link" href="#">SEO</a>
-          <a class="link" href="#">Wordpress</a>
-          <a class="link" href="#">Marketing</a>
-          <a class="link" href="#">UX</a>
-          <a class="link" href="#">Modern</a>
-          <a class="link" href="#">Success</a>
-          <a class="link" href="#">Nature</a>
-          <a class="link" href="#">Productivity</a>
-          <a class="link" href="#">Sales page</a>
-          <a class="link" href="#">Sell</a>
-          <a class="link" href="#">Teamwork</a>
-          <a class="link" href="#">Monetize</a>
+          <h2 class="section-title">Tags</h2>
+          <a class="link tags__item" href="#">Business</a>
+          <a class="link tags__item" href="#">Freelance</a>
+          <a class="link tags__item" href="#">Money</a>
+          <a class="link tags__item" href="#">Experience</a>
+          <a class="link tags__item" href="#">Lifestyle</a>
+          <a class="link tags__item" href="#">SEO</a>
+          <a class="link tags__item" href="#">Wordpress</a>
+          <a class="link tags__item" href="#">Marketing</a>
+          <a class="link tags__item" href="#">UX</a>
+          <a class="link tags__item" href="#">Modern</a>
+          <a class="link tags__item" href="#">Success</a>
+          <a class="link tags__item" href="#">Nature</a>
+          <a class="link tags__item" href="#">Productivity</a>
+          <a class="link tags__item" href="#">Sales page</a>
+          <a class="link tags__item" href="#">Sell</a>
+          <a class="link tags__item" href="#">Teamwork</a>
+          <a class="link tags__item" href="#">Monetize</a>
+        </section>
+        <section class="email">
+          <h2 class="section-title">Email newsletter</h2>
+          <p class="email__subtitle">
+            Sign up to receive email updates and to hear what's going on.
+          </p>
+          <form action="/" class="subscribe-form">
+            <label for=""></label>
+            <label for=""></label>
+            <input class="subscribe-form__input" type="text" id="subscribe-text" placeholder="Your name">
+            <input class="subscribe-form__input" type="email" id="subscribe-email" placeholder="Your email adress">
+            <button class="link btn subscribe-form__button" type="submit">Subscribe to newsletter</button>
+          </form>
         </section>
       </aside>
     </section>
-    <nav class="pagination">
-      <ul>
-        <li><span></span></li>
-        <li><span></span>1</li>
-        <li><span></span>2</li>
-        <li><span></span>3</li>
-        <li><span></span>...</li>
-        <li><span></span>8</li>
-        <li><span></span></li>
+    <nav aria-label="pagination">
+      <ul class="list pagination">
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span></a></li>
+        <li class="pagination__item"><a class="pagination__link pagination__link_activ" href="#"><span></span>1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>...</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>8</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><span></span></a></li>
       </ul>
     </nav>
+    <section class="most-popular">
+      <h2 class="most-popular__title">Most popular</h2>
+      <div class="most-popular__container">
+        <article class="post">
+          <span class="label">BMV</span>
+          <img src="images/most-popular/most-pop-1.jpg" alt="" class="post__img">
+          <h2 class="post__title">
+            One of Saturn’s largest rings may be newer than anyone
+          </h2>
+          <p class="post__subtitle">
+            Rickie Baroch - June 6, 2019
+          </p>
+        </article>
+        <article class="post">
+          <span class="label">BMV</span>
+          <img src="images/most-popular/most-pop-2.jpg" alt="" class="post__img">
+          <h2 class="post__title">
+            One of Saturn’s largest rings may be newer than anyone
+          </h2>
+          <p class="post__subtitle">
+            Rickie Baroch - June 6, 2019
+          </p>
+        </article>
+        <article class="post">
+          <span class="label">BMV</span>
+          <img src="images/most-popular/most-pop-3.jpg" alt="" class="post__img">
+          <h2 class="post__title">
+            One of Saturn’s largest rings may be newer than anyone
+          </h2>
+          <p class="post__subtitle">
+            Rickie Baroch - June 6, 2019
+          </p>
+        </article>
+        <article class="post">
+          <span class="label">BMV</span>
+          <img src="images/most-popular/most-pop-4.jpg" alt="" class="post__img">
+          <h2 class="post__title">
+            One of Saturn’s largest rings may be newer than anyone
+          </h2>
+          <p class="post__subtitle">
+            Rickie Baroch - June 6, 2019
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer_about">
+        <div class="logo"></div>
+        <p class="footer__short-description">
+          Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      </div>
+      <div class="footer__social">
+      </div>
+    </div>
+    <section class="recent-posts">
+
+    </section>
+    <form action="/" class="news-later">
+      <input type="text" name="name" id="name"
+      placeholder="Your name">
+      <input type="email" name="email" id="email"
+      placeholder="Your email adress">
+      <button class="btn" type="submit">Subscribe to newsletter</button>
+    </form>
+  </footer>
   </body>
 
 </html>

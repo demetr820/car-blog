@@ -1,0 +1,9 @@
+.link {
+  font: 400 14px/18px var(--f-f);
+  text-decoration: none;
+  color: #fff;
+}
+.link:hover {
+  color: rgba(255, 255, 255, .6);
+  transition: .6s color;
+}

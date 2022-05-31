@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap');
 @import '../scss/blocks/globals/globals';
 @import '../scss/blocks/section-title/section-title';
-@import '../scss/blocks/section-title/_mb/section-title_mb_23';
+@import '../scss/blocks/link/link';
+@import '../scss/blocks/btn/btn';
+@import '../scss/blocks/list/list';
+
+
 @import '../scss/blocks/header/header';
 @import '../scss/blocks/header/__container/header__container';
 @import '../scss/blocks/logo/logo';
@@ -33,8 +37,7 @@
 @import '../scss/blocks/posts/__author/posts__author';
 @import '../scss/blocks/posts/__text/posts__text';
 
-@import '../scss/blocks/about-us/about-us';
-// подумать какие стили задать блоку post...
+@import '../scss/blocks/post/post';
 @import '../scss/blocks/post/__img/post__img';
 @import '../scss/blocks/post/__title/post__title';
 @import '../scss/blocks/post/__subtitle/post__subtitle';
@@ -42,18 +45,95 @@
 @import '../scss/blocks/post/__link/post__link';
 
 
+@import '../scss/blocks/about-us/about-us';
+// подумать какие стили задать блоку post...
+@import '../scss/blocks/about-us/__img/about-us__img';
+@import '../scss/blocks/about-us/__title/about-us__title';
+@import '../scss/blocks/about-us/__subtitle/about-us__subtitle';
+@import '../scss/blocks/about-us/__text/about-us__text';
+// @import '../scss/blocks/about-us/__link/about-us__link';
+
+@import '../scss/blocks/popular-posts/__container/popular-posts__container';
+
+
+.instagram-widget {
+  padding: 20px 0 0 0;
+}
+.instagram-widget__images {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-template-rows: 130px 130px 130px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 270px;
+  margin: 0 0 10px 0;
+  padding: 25px 0 0 0;
+}
 
 
 
+.tags__item {
+  display: inline-block;
+  color: #171717;
+  border-radius: 3px;
+  background-color: #EBEBEB;
+  padding: 7px 16px 5px 16px;
+  font: 400 14px/18px var(--f-f);
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+.most-popular__title {
+  margin: 0 0 23px 0;
+  font: 700 30px/38px var(--f-f);
+}
+.most-popular__container {
+  display: flex;
+  justify-content: space-between;
+}
 
 
+.pagination {
+  display: flex;
+}
+.pagination__item {
+  margin-right: 10px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+}
+.pagination__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font: 400 16px/16px var(--f-f);
+  text-align: center;
+  color: #171717;
+  text-decoration: none;
+  box-sizing: border-box;
+  // background-color: #f2f2f2;
+}
+.pagination__link_activ {
+  background-color: #000;
+  color: #fff;
+}
+.search-form__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-
-
-
-
-
-
-
-
-
+.subscribe-form__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 17px 15px 15px 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #AEB3BB;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+}
+.subscribe-form__button {
+  display: block;
+}
+// <svg role="img"><use xlink:href="./sprites.svg#unicorn"/></svg>
