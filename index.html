@@ -1,362 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Car Blog Template</title>
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body class="page">
-  <header class="header">
-    <div class="header__container">
-      <div class="logo">
-        <img src="images/logo.svg" alt="logo" class="logo__img">
-        <span class="logo__text">CAR</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Car Blog Template</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <div class="logo">
+          <img src="images/sprite.svg#logo" alt="logo" class="logo__img" />
+          <span class="logo__text">CAR</span>
+        </div>
+        <nav class="navigation">
+          <ul class="list navigation__list">
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#">Recipes</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#">Article</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#">Contact</a>
+            </li>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#">Purchase</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="/" class="search-form">
+          <input type="search" class="search-form__input" placeholder="Car" />
+          <button class="search-form__button" type="submit" aria-label="search">
+            <svg role="img"><use xlink:href="images/sprite.svg#search" /></svg>
+          </button>
+        </form>
       </div>
-      <nav class="navigation">
-        <ul class="list navigation__list">
-          <li class="navigation__item">
-            <a class="link navigation__link"href="#">Home</a></li>
-          <li class="navigation__item">
-            <a class="link navigation__link"href="#">Recipes</a></li>
-          <li class="navigation__item">
-            <a class="link navigation__link"href="#">Article</a></li>
-          <li class="navigation__item">
-            <a class="link navigation__link"href="#">Contact</a></li>
-          <li class="navigation__item">
-            <a class="link navigation__link"href="#">Purchase</a></li>
+    </header>
+    <main class="content">
+      <section class="category" aria-label="category">
+        <div class="category__item category__item_height_2x">
+          <span class="label">Vehicle</span>
+          <img class="category__image" src="images/image-1.jpg" alt="car-1" />
+          <div class="category__text-container">
+            <span class="category__author"> Rickie Baroch - June 6, 2019 </span>
+            <h2 class="category__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+          </div>
+        </div>
+        <div class="category__item">
+          <img class="category__image" src="images/image-2.jpg" alt="car-2" />
+          <span class="category__label">Vehicle</span>
+          <div class="category__text-container">
+            <span class="category__author"> Rickie Baroch - June 6, 2019 </span>
+            <h2 class="category__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+          </div>
+        </div>
+        <div class="category__item">
+          <img class="category__image" src="images/image-3.jpg" alt="car-3" />
+          <span class="category__label">Vehicle</span>
+          <div class="category__text-container">
+            <span class="category__author"> Rickie Baroch - June 6, 2019 </span>
+            <h2 class="category__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+          </div>
+        </div>
+        <div class="category__item">
+          <img class="category__image" src="images/image-4.jpg" alt="car-4" />
+          <span class="category__label">Vehicle</span>
+          <div class="category__text-container">
+            <span class="category__author"> Rickie Baroch - June 6, 2019 </span>
+            <h2 class="category__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+          </div>
+        </div>
+        <div class="category__item">
+          <img class="category__image" src="images/image-5.jpg" alt="car-5" />
+          <span class="category__label">Vehicle</span>
+          <div class="category__text-container">
+            <span class="category__author"> Rickie Baroch - June 6, 2019 </span>
+            <h2 class="category__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="two-columns" aria-label="two columns">
+        <div class="two-columns__main">
+          <section class="list posts" aria-label="posts">
+            <!-- надо придумать как назвать БЭМ-блоки в этой секции и заодно поправить позиционирование текста карточки -->
+            <article class="posts__item">
+              <img
+                class="posts__img"
+                src="images/post-image-1.jpg"
+                alt="car-1"
+              />
+              <div class="posts__description">
+                <span class="label">Vehicle</span>
+                <h3 class="posts__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h3>
+                <p class="posts__author">Rickie Baroch - June 6, 2019</p>
+                <p class="posts__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem sed ut
+                  perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                </p>
+              </div>
+            </article>
+            <article class="posts__item">
+              <img
+                class="posts__img"
+                src="images/post-image-2.jpg"
+                alt="car-2"
+              />
+              <div class="posts__description">
+                <span class="label">Vehicle</span>
+                <h3 class="posts__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h3>
+                <p class="posts__author">Rickie Baroch - June 6, 2019</p>
+                <p class="posts__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem sed ut
+                  perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                </p>
+              </div>
+            </article>
+            <article class="posts__item">
+              <img
+                class="posts__img"
+                src="images/post-image-3.jpg"
+                alt="car-3"
+              />
+              <div class="posts__description">
+                <span class="label">Vehicle</span>
+                <h3 class="posts__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h3>
+                <p class="posts__author">Rickie Baroch - June 6, 2019</p>
+                <p class="posts__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem sed ut
+                  perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                </p>
+              </div>
+            </article>
+            <article class="posts__item">
+              <img
+                class="posts__img"
+                src="images/post-image-4.jpg"
+                alt="car-4"
+              />
+              <div class="posts__description">
+                <span class="label">Vehicle</span>
+                <h3 class="posts__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h3>
+                <p class="posts__author">Rickie Baroch - June 6, 2019</p>
+                <p class="posts__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem sed ut
+                  perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                </p>
+              </div>
+            </article>
+            <article class="posts__item">
+              <img
+                class="posts__img"
+                src="images/post-image-5.jpg"
+                alt="car-5"
+              />
+              <div class="posts__description">
+                <span class="label">Vehicle</span>
+                <h3 class="posts__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h3>
+                <p class="posts__author">Rickie Baroch - June 6, 2019</p>
+                <p class="posts__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem sed ut
+                  perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                </p>
+              </div>
+            </article>
+          </section>
+        </div>
+        <aside class="two-columns__sidebar">
+          <section class="about-us">
+            <article class="post">
+              <img
+                src="images/about.jpg"
+                alt="about-us"
+                class="about-us__img"
+              />
+              <h2 class="about-us__title">Leon Hunt</h2>
+              <p class="about-us__subtitle">Food & cooking bloger</p>
+              <p class="about-us__text">
+                Hi, I'm Leon. Cooking is the way I express my creative side to
+                the world. Welcome to my Kitchen Corner on…
+              </p>
+              <a href="#" class="link btn">Continue Reading</a>
+            </article>
+          </section>
+          <section class="popular-posts" aria-label="Popular posts">
+            <h2 class="section-title">Popular posts</h2>
+            <div class="popular-posts__container">
+              <article class="post">
+                <span class="label">Vehicle</span>
+                <img src="images/popular-1.jpg" alt="" class="post__img" />
+                <h2 class="post__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+                <p class="post__subtitle">Food & cooking bloger</p>
+              </article>
+              <article class="post">
+                <span class="label">Vehicle</span>
+                <img src="images/popular-2.jpg" alt="" class="post__img" />
+                <h2 class="post__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+                <p class="post__subtitle">Food & cooking bloger</p>
+              </article>
+              <article class="post">
+                <span class="label">Vehicle</span>
+                <img src="images/popular-3.jpg" alt="" class="post__img" />
+                <h2 class="post__title">
+                  One of Saturn’s largest rings may be newer than anyone
+                </h2>
+                <p class="post__subtitle">Food & cooking bloger</p>
+              </article>
+            </div>
+          </section>
+          <section class="instagram-widget">
+            <h2 class="section-title">Instagram</h2>
+            <figure class="instagram-widget__images">
+              <img src="images/inst-image-1.jpg" alt="inst" />
+              <img src="images/inst-image-2.jpg" alt="inst" />
+              <img src="images/inst-image-3.jpg" alt="inst" />
+              <img src="images/inst-image-4.jpg" alt="inst" />
+              <img src="images/inst-image-5.jpg" alt="inst" />
+              <img src="images/inst-image-6.jpg" alt="inst" />
+            </figure>
+            <a class="link btn" href="#">View instagram</a>
+          </section>
+          <section class="tags">
+            <h2 class="section-title">Tags</h2>
+            <a class="link tags__item" href="#">Business</a>
+            <a class="link tags__item" href="#">Freelance</a>
+            <a class="link tags__item" href="#">Money</a>
+            <a class="link tags__item" href="#">Experience</a>
+            <a class="link tags__item" href="#">Lifestyle</a>
+            <a class="link tags__item" href="#">SEO</a>
+            <a class="link tags__item" href="#">Wordpress</a>
+            <a class="link tags__item" href="#">Marketing</a>
+            <a class="link tags__item" href="#">UX</a>
+            <a class="link tags__item" href="#">Modern</a>
+            <a class="link tags__item" href="#">Success</a>
+            <a class="link tags__item" href="#">Nature</a>
+            <a class="link tags__item" href="#">Productivity</a>
+            <a class="link tags__item" href="#">Sales page</a>
+            <a class="link tags__item" href="#">Sell</a>
+            <a class="link tags__item" href="#">Teamwork</a>
+            <a class="link tags__item" href="#">Monetize</a>
+          </section>
+          <section class="email">
+            <h2 class="section-title">Email newsletter</h2>
+            <p class="email__subtitle">
+              Sign up to receive email updates and to hear what's going on.
+            </p>
+            <form action="/" class="subscribe-form">
+              <label for=""></label>
+              <label for=""></label>
+              <input
+                class="subscribe-form__input"
+                type="text"
+                id="subscribe-text"
+                placeholder="Your name"
+              />
+              <input
+                class="subscribe-form__input"
+                type="email"
+                id="subscribe-email"
+                placeholder="Your email adress"
+              />
+              <button class="link btn subscribe-form__button" type="submit">
+                Subscribe to newsletter
+              </button>
+            </form>
+          </section>
+        </aside>
+      </section>
+      <nav aria-label="pagination">
+        <ul class="list pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="previous page">
+              <svg role="img"><use xlink:href="images/sprite.svg#previous"/></svg>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link_activ" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">8</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="next page">
+              <svg role="img"><use xlink:href="images/sprite.svg#next"/></svg>
+            </a>
+          </li>
         </ul>
       </nav>
-      <form action="/" class="search-form">
-        <input type="search" class="search-form__input">
-        <button class="search-form__button" type="submit">
-          <svg role="img"><use xlink:href="images/sprite.svg#search"/></svg>
-        </button>
-      </form>
-    </div>
-  </header>
-  <main class="content">
-    <section class="category" aria-label="category">
-      <div class="category__item category__item_height_2x">
-        <span class="label">Vehicle</span>
-        <img class="category__image" src="images/image-1.jpg" alt="car-1">
-        <div class="category__text-container">
-          <span class="category__author">
-            Rickie Baroch - June 6, 2019
-          </span>
-          <h2 class="category__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-        </div>
-      </div>
-      <div class="category__item">
-        <img class="category__image" src="images/image-2.jpg" alt="car-2">
-        <span class="category__label">Vehicle</span>
-        <div class="category__text-container">
-          <span class="category__author">
-            Rickie Baroch - June 6, 2019
-          </span>
-          <h2 class="category__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-        </div>
-      </div>
-      <div class="category__item">
-        <img class="category__image" src="images/image-3.jpg" alt="car-3">
-        <span class="category__label">Vehicle</span>
-        <div class="category__text-container">
-          <span class="category__author">
-            Rickie Baroch - June 6, 2019
-          </span>
-          <h2 class="category__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-        </div>
-      </div>
-      <div class="category__item">
-        <img class="category__image" src="images/image-4.jpg" alt="car-4">
-        <span class="category__label">Vehicle</span>
-        <div class="category__text-container">
-          <span class="category__author">
-            Rickie Baroch - June 6, 2019
-          </span>
-          <h2 class="category__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-        </div>
-      </div>
-      <div class="category__item">
-        <img class="category__image" src="images/image-5.jpg" alt="car-5">
-        <span class="category__label">Vehicle</span>
-        <div class="category__text-container">
-          <span class="category__author">
-            Rickie Baroch - June 6, 2019
-          </span>
-          <h2 class="category__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="two-columns" aria-label="two columns">
-      <div class="two-columns__main">
-        <section class="list posts" aria-label="posts">
-          <!-- надо придумать как назвать БЭМ-блоки в этой секции и заодно поправить позиционирование текста карточки -->
-          <article class="posts__item">
-            <img class="posts__img" src="images/posts/post-img1.jpg" alt="car-1">
-            <div class="posts__description">
-              <span class="label">Vehicle</span>
-              <h3 class="posts__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h3>
-              <p class="posts__author">
-                Rickie Baroch - June 6, 2019
-              </p>
-              <p class="posts__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              </p>
-            </div>
-          </article>
-          <article class="posts__item">
-            <img class="posts__img" src="images/posts/post-img2.jpg" alt="car-2">
-            <div class="posts__description">
-              <span class="label">Vehicle</span>
-              <h3 class="posts__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h3>
-              <p class="posts__author">
-                Rickie Baroch - June 6, 2019
-              </p>
-              <p class="posts__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              </p>
-            </div>
-          </article>
-          <article class="posts__item">
-            <img class="posts__img" src="images/posts/post-img3.jpg" alt="car-3">
-            <div class="posts__description">
-              <span class="label">Vehicle</span>
-              <h3 class="posts__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h3>
-              <p class="posts__author">
-                Rickie Baroch - June 6, 2019
-              </p>
-              <p class="posts__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              </p>
-            </div>
-          </article>
-          <article class="posts__item">
-            <img class="posts__img" src="images/posts/post-img4.jpg" alt="car-4">
-            <div class="posts__description">
-              <span class="label">Vehicle</span>
-              <h3 class="posts__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h3>
-              <p class="posts__author">
-                Rickie Baroch - June 6, 2019
-              </p>
-              <p class="posts__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              </p>
-            </div>
-          </article>
-          <article class="posts__item">
-            <img class="posts__img" src="images/posts/post-img5.jpg" alt="car-5">
-            <div class="posts__description">
-              <span class="label">Vehicle</span>
-              <h3 class="posts__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h3>
-              <p class="posts__author">
-                Rickie Baroch - June 6, 2019
-              </p>
-              <p class="posts__text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              </p>
-            </div>
-          </article>
-        </section>
-      </div>
-      <aside class="two-columns__sidebar">
-        <section class="about-us">
+      <section class="most-popular">
+        <h2 class="most-popular__title">Most popular</h2>
+        <div class="most-popular__container">
           <article class="post">
-            <img src="images/about.jpg" alt="about-us" class="about-us__img">
-            <h2 class="about-us__title">Leon Hunt</h2>
-            <p class="about-us__subtitle">
-              Food & cooking bloger
+            <span class="label">BMV</span>
+            <img src="images/most-popular-1.jpg" alt="" class="post__img" />
+            <h2 class="post__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+            <p class="post__subtitle">Rickie Baroch - June 6, 2019</p>
+          </article>
+          <article class="post">
+            <span class="label">BMV</span>
+            <img src="images/most-popular-2.jpg" alt="" class="post__img" />
+            <h2 class="post__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+            <p class="post__subtitle">Rickie Baroch - June 6, 2019</p>
+          </article>
+          <article class="post">
+            <span class="label">BMV</span>
+            <img src="images/most-popular-3.jpg" alt="" class="post__img" />
+            <h2 class="post__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+            <p class="post__subtitle">Rickie Baroch - June 6, 2019</p>
+          </article>
+          <article class="post">
+            <span class="label">BMV</span>
+            <img src="images/most-popular-4.jpg" alt="" class="post__img" />
+            <h2 class="post__title">
+              One of Saturn’s largest rings may be newer than anyone
+            </h2>
+            <p class="post__subtitle">Rickie Baroch - June 6, 2019</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__column">
+          <div class="footer_about">
+            <div class="logo"></div>
+            <p class="footer__short-description">
+              Short description about the company Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry.
             </p>
-            <p class="about-us__text">
-              Hi, I'm Leon. Cooking is the way I express my
-              creative side to the world. Welcome to my Kitchen Corner on…
-            </p>
-            <a href="#" class="link btn">Continue Reading</a>
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__header">Keep in touch</h3>
+            <ul class="footer__social-links">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="social link facebook">
+                  <svg class="footer__social-icon" role="img"><use xlink:href="./images/sprite.svg#facebook"/></svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="social link twitter">
+                  <svg role="img"><use xlink:href="./images/sprite.svg#twitter"/></svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="social link pinterest">
+                  <svg class="footer__social-icon" role="img"><use xlink:href="./images/sprite.svg#pinterest"/></svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="social link g+">
+                  <svg class="footer__social-icon" role="img"><use xlink:href="./images/sprite.svg#google-plus"/></svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="social link">
+                  <svg class="footer__social-icon" role="img"><use xlink:href="./images/sprite.svg#instagram"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="recent-posts">
+          <h2 class="footer__header">Recent posts</h2>
+          <article class="recent-posts__item">
+            <img class="recent-posts__image" src="images/footer-image-1.jpg" alt="footer image 1">
+            <div class="recent-posts__body">
+              <h3 class="recent-posts__title">One of Saturn’s largest rings may be newer than…</h3>
+              <p class="recent-posts__subtitle">Rickie Baroch - June 6, 2019</p>
+            </div>
+          </article>
+          <article class="recent-posts__item">
+            <img class="recent-posts__image" src="images/footer-image-2.jpg" alt="footer image 2">
+            <div class="recent-posts__body">
+              <h3 class="recent-posts__title">One of Saturn’s largest rings may be newer than…</h3>
+              <p class="recent-posts__subtitle">Rickie Baroch - June 6, 2019</p>
+            </div>
+          </article>
+          <article class="recent-posts__item">
+            <img class="recent-posts__image" src="images/footer-image-3.jpg" alt="footer image 3">
+            <div class="recent-posts__body">
+              <h3 class="recent-posts__title">One of Saturn’s largest rings may be newer than…</h3>
+              <p class="recent-posts__subtitle">Rickie Baroch - June 6, 2019</p>
+            </div>
           </article>
         </section>
-        <section class="popular-posts" aria-label="Popular posts">
-          <h2 class="section-title">Popular posts</h2>
-          <div class="popular-posts__container">
-            <article class="post">
-              <span class="label">Vehicle</span>
-              <img src="images/popular/pop-1.jpg" alt="" class="post__img">
-              <h2 class="post__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h2>
-              <p class="post__subtitle">
-                Food & cooking bloger
-              </p>
-            </article>
-            <article class="post">
-              <span class="label">Vehicle</span>
-              <img src="images/popular/pop-2.jpg" alt="" class="post__img">
-              <h2 class="post__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h2>
-              <p class="post__subtitle">
-                Food & cooking bloger
-              </p>
-            </article>
-            <article class="post">
-              <span class="label">Vehicle</span>
-              <img src="images/popular/pop-3.jpg" alt="" class="post__img">
-              <h2 class="post__title">
-                One of Saturn’s largest rings may be newer than anyone
-              </h2>
-              <p class="post__subtitle">
-                Food & cooking bloger
-              </p>
-            </article>
-
-          </div>
-        </section>
-        <section class="instagram-widget">
-          <h2 class="section-title">Instagram</h2>
-          <figure class="instagram-widget__images">
-            <img src="images/inst-foto/inst-1.jpg" alt="inst">
-            <img src="images/inst-foto/inst-2.jpg" alt="inst">
-            <img src="images/inst-foto/inst-3.jpg" alt="inst">
-            <img src="images/inst-foto/inst-4.jpg" alt="inst">
-            <img src="images/inst-foto/inst-5.jpg" alt="inst">
-            <img src="images/inst-foto/inst-6.jpg" alt="inst">
-          </figure>
-          <a class="link btn" href="#">View instagram</a>
-        </section>
-        <section class="tags">
-          <h2 class="section-title">Tags</h2>
-          <a class="link tags__item" href="#">Business</a>
-          <a class="link tags__item" href="#">Freelance</a>
-          <a class="link tags__item" href="#">Money</a>
-          <a class="link tags__item" href="#">Experience</a>
-          <a class="link tags__item" href="#">Lifestyle</a>
-          <a class="link tags__item" href="#">SEO</a>
-          <a class="link tags__item" href="#">Wordpress</a>
-          <a class="link tags__item" href="#">Marketing</a>
-          <a class="link tags__item" href="#">UX</a>
-          <a class="link tags__item" href="#">Modern</a>
-          <a class="link tags__item" href="#">Success</a>
-          <a class="link tags__item" href="#">Nature</a>
-          <a class="link tags__item" href="#">Productivity</a>
-          <a class="link tags__item" href="#">Sales page</a>
-          <a class="link tags__item" href="#">Sell</a>
-          <a class="link tags__item" href="#">Teamwork</a>
-          <a class="link tags__item" href="#">Monetize</a>
-        </section>
-        <section class="email">
-          <h2 class="section-title">Email newsletter</h2>
-          <p class="email__subtitle">
-            Sign up to receive email updates and to hear what's going on.
-          </p>
-          <form action="/" class="subscribe-form">
-            <label for=""></label>
-            <label for=""></label>
-            <input class="subscribe-form__input" type="text" id="subscribe-text" placeholder="Your name">
-            <input class="subscribe-form__input" type="email" id="subscribe-email" placeholder="Your email adress">
-            <button class="link btn subscribe-form__button" type="submit">Subscribe to newsletter</button>
+        <section class="footer__column">
+          <h2 class="footer__header">Newsletter</h2>
+          <form action="/" class="footer__newsletter">
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email adress"
+            />
+            <button class="btn" type="submit">Subscribe to newsletter</button>
           </form>
         </section>
-      </aside>
-    </section>
-    <nav aria-label="pagination">
-      <ul class="list pagination">
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span></a></li>
-        <li class="pagination__item"><a class="pagination__link pagination__link_activ" href="#"><span></span>1</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>2</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>3</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>...</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span>8</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#"><span></span></a></li>
-      </ul>
-    </nav>
-    <section class="most-popular">
-      <h2 class="most-popular__title">Most popular</h2>
-      <div class="most-popular__container">
-        <article class="post">
-          <span class="label">BMV</span>
-          <img src="images/most-popular/most-pop-1.jpg" alt="" class="post__img">
-          <h2 class="post__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-          <p class="post__subtitle">
-            Rickie Baroch - June 6, 2019
-          </p>
-        </article>
-        <article class="post">
-          <span class="label">BMV</span>
-          <img src="images/most-popular/most-pop-2.jpg" alt="" class="post__img">
-          <h2 class="post__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-          <p class="post__subtitle">
-            Rickie Baroch - June 6, 2019
-          </p>
-        </article>
-        <article class="post">
-          <span class="label">BMV</span>
-          <img src="images/most-popular/most-pop-3.jpg" alt="" class="post__img">
-          <h2 class="post__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-          <p class="post__subtitle">
-            Rickie Baroch - June 6, 2019
-          </p>
-        </article>
-        <article class="post">
-          <span class="label">BMV</span>
-          <img src="images/most-popular/most-pop-4.jpg" alt="" class="post__img">
-          <h2 class="post__title">
-            One of Saturn’s largest rings may be newer than anyone
-          </h2>
-          <p class="post__subtitle">
-            Rickie Baroch - June 6, 2019
-          </p>
-        </article>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer_about">
-        <div class="logo"></div>
-        <p class="footer__short-description">
-          Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
-      </div>
-      <div class="footer__social">
-      </div>
-    </div>
-    <section class="recent-posts">
-
-    </section>
-    <form action="/" class="news-later">
-      <input type="text" name="name" id="name"
-      placeholder="Your name">
-      <input type="email" name="email" id="email"
-      placeholder="Your email adress">
-      <button class="btn" type="submit">Subscribe to newsletter</button>
-    </form>
-  </footer>
+      <section class="footer footer_bottom">
+        <div class="footer__inner">
+          <p class="copyright">
+            @2019 Logwork. All Right Reserved.
+          </p>
+          <nav class="navigation">
+            <ul class="list navigation__list">
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Recipes</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Article</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Contact</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link navigation__link" href="#">Purchase</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
   </body>
-
 </html>

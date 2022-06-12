@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const rename = require('gulp-rename');
+const imagemin = require('gulp-imagemin');
 
 const files = {
   scssPath: 'scss/**/*.scss',
@@ -33,6 +34,11 @@ function browsersync() {
 function styles() {
   return src(files.scssPath)
   .pipe(sass().on('error', sass.logError))
+  .pipe(
+    autoprefixer({
+      overrideBrowserlist: ["last 5 versions"],
+      cascade: true,
+  }))
   .pipe(dest('styles/'))
   .pipe(browserSync.stream())
 }
@@ -56,9 +62,18 @@ function sprite() {
     .pipe(rename('sprite.svg'))
     .pipe(dest('images'));
 }
+function image_min() {
+  return src('images/**/*.{jpg, png}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+    ]))
+    .pipe(dest('images'));
+}
 exports.default = parallel(
   styles,
   browsersync,
   watch_dev,
   );
 exports.svg = sprite;
+exports.imgmin = image_min;
