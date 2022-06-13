@@ -1,0 +1,15 @@
+.pagination__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font: 400 16px/16px var(--f-f);
+  text-align: center;
+  color: #171717;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.pagination__link_activ {
+  background-color: #000;
+  color: #fff;
+}
