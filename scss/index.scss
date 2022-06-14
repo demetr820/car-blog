@@ -1,6 +1,5 @@
 @import '../vendor/normalize';
-// переделать подключение шрифтов
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap');
+@import '../vendor/fonts/fonts';
 @import '../scss/blocks/globals/globals';
 @import '../scss/blocks/section-title/section-title';
 @import '../scss/blocks/link/link';
@@ -54,7 +53,6 @@
 @import '../scss/blocks/about-us/__title/about-us__title';
 @import '../scss/blocks/about-us/__subtitle/about-us__subtitle';
 @import '../scss/blocks/about-us/__text/about-us__text';
-// @import '../scss/blocks/about-us/__link/about-us__link';
 
 @import '../scss/blocks/popular-posts/__container/popular-posts__container';
 
