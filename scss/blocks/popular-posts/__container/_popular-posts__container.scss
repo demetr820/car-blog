@@ -1,3 +1,6 @@
 .popular-posts__container {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
   padding: 23px 0 0 0;
 }

@@ -1,0 +1,11 @@
+.instagram-widget__images {
+  display: grid;
+  grid-template-rows: 130px 130px 130px;
+  grid-template-columns: repeat(2, 130px);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 100%;
+  padding: 25px 0 0 0;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+}
