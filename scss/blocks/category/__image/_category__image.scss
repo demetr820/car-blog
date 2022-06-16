@@ -1,6 +1,12 @@
 .category__image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 370px;
+  height: auto;
   border-radius: 5px;
+  object-fit: cover;
 }
